@@ -7,11 +7,10 @@
         "build":"cd mern_a_to_z_client && npm run build",
         "install-mern_a_to_z_client": "cd mern_a_to_z_client && npm install",
         "heroku-postbuild": "npm run install-mern_a_to_z_client && npm run build",
-        "start": "nodemon app.js",
+        "start": "concurrently -n 'server,client' -c 'red,green' \"nodemon app.js\" \"npm run mern_a_to_z_client\"",
         "app": "nodemon app.js && cd mern_a_to_z_client && npm start",
         "dev": "node app && cd mern_a_to_z_client && npm start",
-        "dev2": "node app && cd mern_a_to_z_client && npm start",
-        "test": "nodemon app.js && cd mern_a_to_z_client && npm start",
+     
         "mern_a_to_z_client":"cd mern_a_to_z_client && npm start",
         "dev3": "concurrently -n 'server,client' -c 'red,green' \"nodemon app.js\" \"npm run mern_a_to_z_client\""
     },
