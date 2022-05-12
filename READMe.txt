@@ -1,0 +1,1 @@
+https://community.atlassian.com/t5/Bitbucket-questions/remote-rejected-master-gt-master-pre-receive-hook-declined/qaq-p/1249707

@@ -1,0 +1,9 @@
+#No Modules
+ /node_modules
+ mern_a_to_z_cleint/node_modules/
+ node_modules
+  /mern_a_to_z_cleint/node_modules/
+  *node_modules/*
+
+
+node_modules

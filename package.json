@@ -1,0 +1,42 @@
+{
+    "name": "mern_a_to_z",
+    "version": "1.0.0",
+    "description": "this is a mern tutorrial found on https://blog.logrocket.com/mern-stack-tutorial/#connecting ",
+    "main": "index.js",
+    "scripts": {
+        "build":"cd mern_a_to_z_client && npm run build",
+        "install-mern_a_to_z_client": "cd mern_a_to_z_client && npm install",
+        "heroku-postbuild": "npm run install-mern_a_to_z_client && npm run build",
+        "start": "nodemon app.js",
+        "app": "nodemon app.js && cd mern_a_to_z_client && npm start",
+        "dev": "node app && cd mern_a_to_z_client && npm start",
+        "dev2": "node app && cd mern_a_to_z_client && npm start",
+        "test": "nodemon app.js && cd mern_a_to_z_client && npm start",
+        "mern_a_to_z_client":"cd mern_a_to_z_client && npm start",
+        "dev3": "concurrently -n 'server,client' -c 'red,green' \"nodemon app.js\" \"npm run mern_a_to_z_client\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ootoothestudent/mern_a_to_z.git"
+    },
+    "author": "Othusitse Simon Dalgleish-Maswabi 20100706 fsf9067@autuni.ac.nz",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ootoothestudent/mern_a_to_z/issues"
+    },
+    "homepage": "https://github.com/ootoothestudent/mern_a_to_z#readme",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.19.2",
+        "concurrently": "^7.1.0",
+        "config": "^3.3.7",
+        "cors": "^2.8.5",
+        "express": "^4.17.3",
+        "heroku": "^7.60.0",
+        "mongoose": "^6.2.8",
+        "node": "^17.7.2",
+        "nodemon": "^2.0.15",
+        "react-router-dom": "^6.2.2",
+        "validation": "0.0.1"
+    }
+}

@@ -1,0 +1,3 @@
+{
+    "mongoURI": "mongodb+srv://simond1:dalgleish@simoversecluster.4tmaz.mongodb.net/mern-a-to-z-app?retryWrites=true&w=majority"
+} 
